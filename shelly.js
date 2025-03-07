@@ -3,11 +3,8 @@ $(function() {
   $('.shoe').append(`
     <img src="shoeIcon.png" class="img-fluid"></img>`
 ).css("background", "purple");
-  // .css("background", "green");
   // TODO: 🐶11. this puts the shoes in the shoe class div, but could we **programatically** default out of that 'tomato' color 
- 
-  // $('.shoe').css("background", "yellow");
-
+  
   let score = 0; //score initialized at zero each reset
 
   function getWin()
@@ -18,7 +15,7 @@ $(function() {
 
   let win = getWin(); //get the first winning num
 
-  //cheat code! todo: turn off
+  //cheat code! TODO: turn off
   console.log('cheat code: ', win); 
 
   //make shelly able to move & go back home
@@ -40,12 +37,11 @@ $(function() {
         $('#gameResult').text('u win'); 
       }
       // TODO: 🐶13. this kinda works when they lose, but can you make into an "else if" so it is bulletproof? 
-      // done 🦈🦈 os
-      else if(shoeNo !== win){
+      
+      else if(shoeNo !== win) {
         // TODO: 🐶14. Make the score go DOWN by one point if they lose
-        
         // score ????; 
-        score -=1; 
+        score -=1;
 
         // TODO: 🐶15. my colors aren't working like I want
         $(this).removeClass('winColor').addClass('loseColor');
@@ -57,7 +53,8 @@ $(function() {
       }
   });
    // TODO: 🐶16. whew, that's a long IIFE in a method. Let's add a comment to let us know we've finsihed it (use that cool up arrow thing like at the end of the doc ready f/n)
-   //↑ends draggable IIFE
+   //ends doc ready function 
+
 
   $('#replay').on('click', (e)=>{
     //todo: set all my shoes bak to normal color
@@ -75,24 +72,25 @@ $(function() {
 
   $('#reset').on('click', (e)=>{
 
+
     // TODO: 🐶17. I ran out of time, help me reset the game. 
-    
-     score = 0; 
+
+    score = 0; 
     $('.shoe').removeClass('winColor').removeClass('loseColor'); 
     win = getWin();
     $('#shellySeal').draggable('enable');
     $('#gameResult').text(''); 
     $('#score').text(score);
 
+
     // TODO: 🐶18. warn the user that this will reset their score (+5 if not use alert method)  
-     alert('This will reset your score');
+
+    alert('This will reset your score');
   });
 
 
   // I wonder what this is for? 
   $('#secretSeal').on('click', ()=>{score =89978798978}); 
-  
-  //4782
-
+   
 });
 //↑ends doc ready f/n
