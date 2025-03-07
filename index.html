@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>seal shell game</title>
   <!-- TODO: 🐶2. most common meta viewport tag needs to go here, thx! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -40,7 +41,7 @@
 <div class="gameControls">
   <button id="reset" class="btn btn-danger">reset game</button><br>
   <button id="replay" class="btn btn-primary">play again</button><br>
-  <span id="score">4782</span>
+  <span id="score"></span>
 </div>
 <!-- ↑game controls -->
 
@@ -48,7 +49,7 @@
 <div id="gameArea" class="container text-center border border-5 card">
   
   <!-- TODO: 🐶4. help! I can't have any internal or inline style or my boss will flip his lid! -->
-  <div id="stuff"  class="row text-center">
+  <div class="row text-center">
     <h4>help shelly the seal find her sea shells under the shoes</h4>
     <p id="gameResult">drag shelly to a shoe!</p>
     <span id="shellySeal">🦭</span>
@@ -70,9 +71,12 @@
   <!-- footer -->
   <div class="row text-center">
     <!-- TODO: 🐶5. I need this looking more like a BS5 footer please and thank you! -->
-    <footer class="row row-cols-5 py-5 my-5 border-top">
-      footer
-      <a href="https://github.com/barrycumbie" target="_blank">github profile</a>
+    <footer class="bg-dark text-white text-center py-3">
+      
+      <a href="https://github.com/carlycopley" target="_blank">
+        <img src="https://assets-v2.lottiefiles.com/a/f62481a4-1172-11ee-aa7c-232f008dfb14/Sl4fTVnhQL.gif" alt="" width="35" height="29">
+        Github Profile
+      </a>
     </footer>
     
     <!-- TODO: 🐶6. add a link to YOUR github profile-->
