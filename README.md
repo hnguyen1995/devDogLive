@@ -2,7 +2,7 @@
 
 🦭Cumbie CIS 376 Web Dev Spring '25 Midterm Dev Exam
 
-# Author, Barry Cumbie, Carly Copley
+# author: BARRY and Hai Nguyen
 
 
 ### Resources
