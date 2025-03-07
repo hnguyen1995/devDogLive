@@ -9,7 +9,7 @@ body {
 
 h4 {
   /* TODO: 🐶10. Tilt Prism is not working for my design preference. How about another **already imported** google font? */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #shoeBox {
